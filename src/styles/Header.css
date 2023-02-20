@@ -1,0 +1,26 @@
+.Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.Span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Logo {
+  width: auto;
+  height: 1.9rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Title {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin: 0 20px;
+}

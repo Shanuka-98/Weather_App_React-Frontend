@@ -1,0 +1,47 @@
+.AddCity {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.TxtInput {
+  height: 2rem;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  background-color: #1f2128;
+  width: 25%;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .TxtInput {
+    width: auto;
+  }
+}
+
+.Btn {
+  height: 2rem;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  background-color: #6c5dd3;
+  cursor: pointer;
+  color: #fff;
+  left: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .TxtInput {
+    width: 25%;
+    height: 2rem;
+  }
+
+  .Btn {
+    height: 2rem;
+  }
+}
