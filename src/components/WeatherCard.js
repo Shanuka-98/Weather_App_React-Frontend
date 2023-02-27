@@ -4,7 +4,6 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { CardActionArea } from "@mui/material";
 
-
 export default function WeatherCard({ data }) {
   return (
     <div className="Cards">
@@ -30,18 +29,20 @@ export default function WeatherCard({ data }) {
                 9.19am, march 8
               </h1>
 
-              <img
-                className="WeatherIcon CardTopItem TopItem-5"
-                src={`http://openweathermap.org/img/w/${data.icon}.png`}
-                alt="icon"
-              />
+              <div className="TopItem-5-6 CardTopItem">
+                <img
+                  className="WeatherIcon"
+                  src={`http://openweathermap.org/img/w/${data.icon}.png`}
+                  alt="icon"
+                />
 
-              <h6
-                className="text-lg text-white CardTopItem TopItem-4"
-                style={{ fontWeight: 380 }}
-              >
-                {data.weather}
-              </h6>
+                <h6
+                  className="text-lg text-white"
+                  style={{ fontWeight: 380 }}
+                >
+                  {data.weather}
+                </h6>
+              </div>
 
               <h1 className="text-6xl font-medium text-white CardTopItem TopItem-6">
                 <small>{data.temperature}</small>

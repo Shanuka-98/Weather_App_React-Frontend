@@ -16,7 +16,6 @@
   margin-top: 2rem;
 }
 
-
 .CardTop {
   background-image: url(../assets/cardBg.png);
   background-size: contain;
@@ -80,17 +79,13 @@
   margin-left: 4rem;
 }
 
-.TopItem-5 {
+.TopItem-5-6 {
   grid-area: bottomLeft;
   align-self: center;
   justify-self: center;
-  margin-left: -7rem;
-}
-
-.TopItem-6 {
-  grid-area: topRight;
-  align-self: center;
-  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5px;
 }
 
 .TopItem-7 {
