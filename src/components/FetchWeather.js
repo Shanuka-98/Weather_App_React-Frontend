@@ -48,13 +48,28 @@ const FetchWeather = () => {
       };
       cities.push(cityInfo);
     }
+
     return cities;
+  }
+
+  const colors = ["#388ee7", "#6249cc", "#40b681", "#de944e", "#9c3a3a"];
+
+  var colorCount = 0;
+
+  function getRandomColor() {
+    if (colorCount < 5) {
+      let color = colors[colorCount];
+      colorCount++;
+      return color;
+    } else {
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
   }
 
   return (
     <div className="CardsView">
       {data.map((item, index) => (
-        <WeatherCard key={index} data={item} />
+        <WeatherCard key={index} data={item} color={getRandomColor()} />
       ))}
     </div>
   );

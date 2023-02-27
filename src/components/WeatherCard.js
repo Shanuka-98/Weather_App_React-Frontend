@@ -4,12 +4,12 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { CardActionArea } from "@mui/material";
 
-export default function WeatherCard({ data }) {
+export default function WeatherCard({ data, color }) {
   return (
     <div className="Cards">
       <Card
         className="WeatherCard"
-        style={{ backgroundColor: "#388ee7", borderRadius: 8 }}
+        style={{ backgroundColor: color, borderRadius: 8 }}
         sx={{ minWidth: 100, maxWidth: 600, minHeight: 50, maxHeight: 370 }}
       >
         <CardActionArea>
